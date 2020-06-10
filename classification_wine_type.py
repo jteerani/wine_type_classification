@@ -1,5 +1,3 @@
-#6210422047_จินต์จุฑา_ธีรนิตยภาพ
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
