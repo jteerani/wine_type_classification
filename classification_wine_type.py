@@ -74,19 +74,3 @@ print("Accuracy of Decision tree model",acc_dtree)
 print("Accuracy of ANN model",acc_ann)
 print("-"*80)
 
-
-# # K-Mean Clustering with python
-# #### Train a Model
-from sklearn.cluster import KMeans
-kmeans = KMeans(n_clusters=3, random_state= 12)
-kmeans.fit(data_std.drop('Label',axis=1))
-# kmeans.cluster_centers_
-# kmeans.labels_
-# #### K-Mean Clustering Model Evaluation
-sse = kmeans.inertia_
-print("K-Means Clustering Model Evaluation")
-print('SEE of 3 Clusters =  ',sse)
-data['cluster']=kmeans.labels_
-print("Cross check cluster and label")
-print(pd.crosstab(data_std['Label'], data['cluster']))
-print("-"*80)
